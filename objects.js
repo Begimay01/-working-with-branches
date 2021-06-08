@@ -33,7 +33,7 @@ const user = {
         }
         return false
     }
-    console.log(hasRequiredField(user3))
+    console.log(hasRequiredField(user5))
     
     
     
