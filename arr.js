@@ -30,3 +30,12 @@ const it_department_employees = [
     let average =  it_department_employees.reduce((sum, item) => sum + item.salary, 0) / it_department_employees.length
     console.log(average)
    
+//задача 3
+    // Из выше стоящего задания. Отфильтровать сотрудников и оставить только тех, у кого ЗП больше 1500 ,
+    // из осташвихся сотрудников каждого повысить на 500, результат записать в новый массив.
+    
+let zp = it_department_employees.filter(item => item.salary > 1500)
+console.log(zp)
+
+let toRise = it_department_employees.filter(item => item.salary < 1500).map(item => item.salary + 500)
+console.log(toRise)
